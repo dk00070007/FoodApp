@@ -1,11 +1,11 @@
 import './App.css';
 import Home from './screens/Home';
-import {
-    HashRouter as Router,
-    Routes,
-    Route
-    
-  } from "react-router-dom";
+import { hashrouter } from "react-router-dom"
+
+reactdom.render(
+    <hashrouter><app /></hashrouter>,
+    document.getelementbyid('root')
+);
 import Login from './screens/Login';
 import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
