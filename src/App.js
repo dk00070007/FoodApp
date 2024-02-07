@@ -1,11 +1,14 @@
 import './App.css';
 import Home from './screens/Home';
-import { hashrouter } from "react-router-dom"
+import { BrowserRouter as Router } from 'react-router-dom';
 
-reactdom.render(
-    <hashrouter><app /></hashrouter>,
-    document.getelementbyid('root')
+ReactDOM.render(
+  <Router basename={process.env.PUBLIC_URL}>
+    <App />
+  </Router>,
+  document.getElementById('root')
 );
+
 import Login from './screens/Login';
 import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
